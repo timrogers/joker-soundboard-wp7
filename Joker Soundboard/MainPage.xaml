@@ -1,0 +1,57 @@
+﻿<phone:PhoneApplicationPage 
+    xmlns:advertising="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+    x:Class="Joker_Soundboard.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="THE JOKER" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="soundboard" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Button Content="Why so serious?" Height="72" HorizontalAlignment="Left" Margin="0,6,0,0" Name="button1" VerticalAlignment="Top" Width="219" FontSize="20" Click="button1_Click" FontWeight="Normal" Hold="button1_Hold" />
+            <Button Content="*laugh*" Height="72" HorizontalAlignment="Left" Margin="237,6,0,0" Name="button2" VerticalAlignment="Top" Width="219" Click="button2_Click" Hold="button2_Hold" />
+            <Button Content="Kill the Batman" Height="72" HorizontalAlignment="Left" Margin="0,84,0,0" Name="button3" VerticalAlignment="Top" Width="219" FontSize="20" Click="button3_Click" Hold="button3_Hold" />
+            <Button Content="Here's my card" Height="72" HorizontalAlignment="Left" Margin="237,84,0,0" Name="button4" VerticalAlignment="Top" Width="219" FontSize="22" Click="button4_Click" Hold="button4_Hold" />
+            <Button Content="Smile on that face" FontSize="18" Height="72" HorizontalAlignment="Left" Margin="0,162,0,0" Name="button5" VerticalAlignment="Top" Width="219" Click="button5_Click" Hold="button5_Hold" />
+            <Button Content="A man of my word" FontSize="20" Height="72" HorizontalAlignment="Left" Margin="237,162,0,0" Name="button6" VerticalAlignment="Top" Width="219" Click="button6_Click" Hold="button6_Hold" />
+            <Button Content="Hello beautiful" FontSize="22" Height="72" HorizontalAlignment="Left" Margin="0,240,0,0" Name="button7" VerticalAlignment="Top" Width="219" Click="button7_Click" Hold="button7_Hold" />
+            <Button Content="All part of the plan" FontSize="19" Height="72" HorizontalAlignment="Left" Margin="237,240,0,0" Name="button8" VerticalAlignment="Top" Width="219" Click="button8_Click" Hold="button8_Hold" />
+            <Button Content="Here we go" FontSize="22" Height="72" HorizontalAlignment="Left" Margin="0,318,0,0" Name="button9" VerticalAlignment="Top" Width="219" Click="button9_Click" Hold="button9_Hold" />
+            <Button Content="Evening commissioner" FontSize="16" Height="72" HorizontalAlignment="Left" Margin="237,319,0,0" Name="button10" VerticalAlignment="Top" Width="219" Click="button10_Click" Hold="button10_Hold" />
+            <!--<advertising:AdControl Height="80" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-14,455,0,0" Name="adControl" AdUnitId="78635" ApplicationId="1e9b7dfa-713a-402b-8b8a-f9378f03b568" /> -->
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="22,471,0,0" Name="textBlock1" Text="Touch and hold a button to save as ringtone" VerticalAlignment="Top" FontWeight="Bold" />
+        </Grid>
+    </Grid>
+
+
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton Click="ApplicationBarIconHelpButton_Click" IconUri="QuestionMark.png" Text="ideas?"/>
+            <shell:ApplicationBarIconButton Click="ApplicationBarIconButton_Click" IconUri="appbar.favs.rest.png" Text="review" />
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>
