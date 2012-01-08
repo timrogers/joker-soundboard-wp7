@@ -91,6 +91,7 @@
     <Content Include="ApplicationIcon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="JokerHeader.png" />
     <Content Include="QuestionMark.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
