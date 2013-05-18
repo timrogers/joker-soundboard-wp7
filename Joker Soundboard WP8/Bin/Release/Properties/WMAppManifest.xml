@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-GB" />
+  <Languages xmlns="">
+    <Language code="en-US" />
+  </Languages>
+  <App xmlns="" ProductID="{29ed489f-90d3-4208-aa14-aa3d66f29248}" Title="Joker Soundboard" RuntimeType="Silverlight" Version="3.0.0.0" Genre="apps.normal" Author="Tim Rogers" Description="Play the scariest sounds from The Joker in top film The Dark Knight right on your Windows Phone. Play them to your friends and bring this iconic character to any situation. Let's put a smile on that face!" Publisher="Tim Rogers" PublisherID="{721fa63a-31b3-481b-85d5-13eac4840929}">
+    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities></Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="Joker_SoundboardToken" TaskName="_default">
+        <TemplateCycle>
+          <SmallImageURI IsRelative="true" IsResource="false">cycle-small-background.jpg</SmallImageURI>
+          <Title>Joker Soundboard</Title>
+          <Photo01ImageURI IsRelative="true" IsResource="false">cycle-background-1.jpg</Photo01ImageURI>
+          <Photo02ImageURI IsRelative="true" IsResource="false">cycle-background-2.jpg</Photo02ImageURI>
+          <Photo03ImageURI IsRelative="true" IsResource="false">cycle-background-3.jpg</Photo03ImageURI>
+          <Photo04ImageURI IsRelative="true" IsResource="false">cycle-background-4.jpg</Photo04ImageURI>
+          <Photo05ImageURI IsRelative="true" IsResource="false">cycle-background-5.jpg</Photo05ImageURI>
+          <Photo06ImageURI IsRelative="true" IsResource="false"></Photo06ImageURI>
+          <Photo07ImageURI IsRelative="true" IsResource="false"></Photo07ImageURI>
+          <Photo08ImageURI IsRelative="true" IsResource="false"></Photo08ImageURI>
+          <Photo09ImageURI IsRelative="true" IsResource="false"></Photo09ImageURI>
+          <Count>0</Count>
+          <HasLarge>True</HasLarge>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+        </TemplateCycle>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
+<!-- WPSDK Version 8.0.9900 -->

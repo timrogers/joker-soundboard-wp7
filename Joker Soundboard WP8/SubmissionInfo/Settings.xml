@@ -1,0 +1,6 @@
+<MarketplaceDetails>
+  <SmallAppTile>StoreTile.png</SmallAppTile>
+  <ScreenShots>ScreenshotWVGA.png;Screenshot2WVGA.png;;;;;;;</ScreenShots>
+  <ScreenShotsWXGA>ScreenshotWXGA.png;Screenshot2WXGA.png;;;;;;;</ScreenShotsWXGA>
+  <ScreenShots720P>Screenshot720p.png;Screenshot2720p.png;;;;;;;</ScreenShots720P>
+</MarketplaceDetails>

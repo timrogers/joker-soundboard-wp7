@@ -14,7 +14,6 @@ using Microsoft.Phone.Controls;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Phone.Tasks;
-using Microsoft.Advertising.Mobile.UI;
 
 namespace Joker_Soundboard
 {
